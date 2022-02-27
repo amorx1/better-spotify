@@ -4,11 +4,17 @@ import Button from '@mui/material/Button';
 function Login({ providers }) {
     return (
         <>
-        {Object.values(providers).map((provider) => (
-            <div key={provider.name}>
-                <Button variant="contained">Sign in to {provider.name}</Button>
+            <div className="">
+                {Object.values(providers).map((provider) => (
+                    <div key={provider.name}>
+                        <Button
+                            variant="contained"
+                            onClick={() => signIn(provider.id, { callbackUrl: "/" })}
+                        >
+                            Sign in to {provider.name}</Button>
+                    </div>
+                ))}
             </div>
-        ))}
         </>
     )
 }
