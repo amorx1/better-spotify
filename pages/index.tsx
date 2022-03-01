@@ -1,16 +1,17 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import DashBoard from './DashBoard'
 
 const Home: NextPage = () => {
   return (
-    <div className={styles.container}>
+    <div>
       <Head>
-        <title>Better Music</title>
+        <title>Better Spotify</title>
         <meta name="Better Apple Music Client" content="Akshay Mor 2022" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <DashBoard />
     </div>
   )
 }
