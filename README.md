@@ -1,9 +1,9 @@
 # Better Spotify
 
-Custom Spotify Web Client
+Custom Spotify Web Client for personal development
 
 Stack:
-* NextJS
+* Next.js
 * NextAuth
 * Spotify Web API
-* MaterialUI
+* Tailwind CSS
