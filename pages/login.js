@@ -1,8 +1,6 @@
 import { getProviders, signIn } from "next-auth/react"
-import Button from '@mui/material/Button';
 import Image from 'next/image'
 import logo from '../public/logo.png'
-import Stack from '@mui/material/Stack';
 
 function Login({ providers }) {
     return (
@@ -17,20 +15,19 @@ function Login({ providers }) {
                     height: 1700
                 }
             }>
-                <Stack direction="column">
+                <div>
                     <Image className="logo"
                         src={logo} />
                     {Object.values(providers).map((provider) => (
                         <div key={provider.name}>
-                            <Button
-                                variant="contained"
-                                color="primary"
+                            <button
+                                class="bg-purple-600 text-white font-bold px-8 rounded-full h-8"
                                 onClick={() => signIn(provider.id, { callbackUrl: "/" })}
                             >
-                                Sign in to {provider.name}</Button>
+                                Sign in to {provider.name}</button>
                         </div>
                     ))}
-                </Stack>
+                </div>
             </div>
         </>
     )
