@@ -8,7 +8,7 @@ const Home: NextPage = () => {
     <div>
       <Head>
         <title>Better Spotify</title>
-        <meta name="Better Apple Music Client" content="Akshay Mor 2022" />
+        <meta name="Better Spotify Client" content="Akshay Mor 2022" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <DashBoard />
